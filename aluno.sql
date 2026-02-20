@@ -10,9 +10,9 @@ create table alunos(
 );
 
 insert into(nome, sexo, email, curso, media, situacao) values
-('Gustavo', 'M', 'gustavofro90@gmail.com', 'Análise de Dados', 7.8, 'Aprovado'),
-('Maria', 'F', 'mariasantos@gmail.com', 'Enfermagem', 6.8, 'Reprovado'),
-('Gabriel', 'M', 'gabriel40@gmail.com', 'Direito', 9.0, 'Aprovado');
+    ('Gustavo', 'M', 'gustavofro90@gmail.com', 'Análise de Dados', 7.8, 'Aprovado'),
+    ('Maria', 'F', 'mariasantos@gmail.com', 'Enfermagem', 6.8, 'Reprovado'),
+    ('Gabriel', 'M', 'gabriel40@gmail.com', 'Direito', 9.0, 'Aprovado');
 
 update alunos
 set curso = 'Medicina', media = 7.0, situacao = 'Aprovado'
