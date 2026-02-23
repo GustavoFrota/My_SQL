@@ -14,3 +14,12 @@ partition by range(ano_ingresso) (
     partition p2023 values less than (2024),
     partition pmax values less than maxvalue
 );
+
+insert into alunos(nome, sexo, idade, ano_ingresso, curso) values
+('Ana', 'M', '1989-05-12', 2020, 'Engenharia'),
+('Bruna', 'F', '2001-12-1', 2021, 'Medicina'),
+('Carlos', 'M', '2004-1-10', 2022, 'Direito'),
+('Diana', 'F', '2002-3-15', 2023, 'Arquitetura'),
+('Gabriel', 'M', '2001-10-22', 2021, 'Biologia');
+
+select * from alunos where ano_ingresso = 2021;
