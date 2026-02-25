@@ -24,4 +24,25 @@ insert into cursos(id_curso, nome, descricao, carga, total_aulas, ano) values
 (9, 'Cozinha Árabe', 'Aprender a fazer Kibe', 40, 30, '2018'),
 (10, 'YouTuber', 'Gerar polêmica e ganhar inscritos', 5, 2, '2018');
 
+update cursos
+set nome = 'HTML5'
+where id = '1';
+
+update cursos
+set nome = 'PHP', ano = '2015'
+where id = '4';
+
+update cursos
+set nome = 'JAVA', carga = 40, ano = '2015'
+where id = '5';
+
+delete from cursos
+where id_curso = '8';
+
+delete from cursos
+where id_curso = '9';
+
+delete from cursos
+where id_curso = '10';
+
 select * from cursos;
