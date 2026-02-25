@@ -15,4 +15,14 @@ insert into cadastro(nome, nascimento, sexo, peso, altura, nacionalidade) values
 ('Adalgiza', '1930-11-2', 'F', 63.2, 1.75, 'Irlanda'),
 ('Ana', '1975-12-22', 'F', 52.3, 1.43, 'EUA'),
 ('Pedro', '2000-05-30', 'M', 75.9, 1.70, default);
+
+alter table cadastro
+add profissao varchar(10) after nome;
+
+alter table cadastro
+modify profissao varchar(20);
+
+alter table cadastro
+change profissao prof varchar(20);
+
 select * from cadastro;
